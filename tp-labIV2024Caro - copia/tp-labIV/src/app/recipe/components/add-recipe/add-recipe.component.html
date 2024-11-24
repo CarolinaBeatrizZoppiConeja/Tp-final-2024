@@ -1,0 +1,62 @@
+<p>add-recipe works!</p>
+<form [formGroup]="recetasdecocina" (ngSubmit)="addrecipes()">
+<h3>ingrese receta nueva aqui</h3>
+    <label for="">ingrese id</label>
+    <input type="number" formControlName="id"/>
+    @if(recetasdecocina.controls['id'].getError('required') && recetasdecocina.controls['id'].touched){
+    <div class="error">campo requerido</div>
+    }
+    <label for="">ingrese categoria</label>
+    <input type="text" formControlName="category"/>
+    @if(recetasdecocina.controls['category'].getError('required') && recetasdecocina.controls['category'].touched){
+        <div class="error">debe tener como minimo dos letras</div>
+        }
+    @if(recetasdecocina.controls['category'].getError('required') && recetasdecocina.controls['category'].touched){
+    <div class="error">campo requerido</div>
+    }
+    <label for="">ingrese nombre</label>
+    <input type="text" formControlName="name"/>
+    @if(recetasdecocina.controls['name'].getError('required') && recetasdecocina.controls['name'].touched){
+        <div class="error">debe tener como minimo dos letras</div>
+        }
+    @if(recetasdecocina.controls['name'].getError('required')&& recetasdecocina.controls['name'].touched ){
+    <div class="error">campo requerido</div>
+    }
+    <label for="">ingrese tiempo de preparacion</label>
+    <input type="text" formControlName="time"/>
+    @if(recetasdecocina.controls['time'].getError('required') && recetasdecocina.controls['time'].touched){
+        <div class="error">debe tener como minimo dos letras</div>
+        }
+    @if(recetasdecocina.controls['time'].getError('required')&& recetasdecocina.controls['time'].touched ){
+    <div class="error">campo requerido</div>
+    }
+    <label for="">ingrese varios ingredientes </label>
+    <input type="text" formControlName="ingredients" id="in"/>
+    <p font-size:8px>puede ingresar varios ingredientes</p>
+    @if(recetasdecocina.controls['ingredients'].getError('required') && recetasdecocina.controls['ingredients'].touched){
+    <button (onClick)="agregaringrediente()">agregar ingrediente</button>
+    <div class="error">campo requerido</div>
+    }
+    @if(recetasdecocina.controls['ingredients'].getError('required') && recetasdecocina.controls['ingredients'].touched){
+        <div class="error">debe tener como minimo dos letras</div>
+        }
+    <label for="">ingrese modo preparacion</label>
+    <input type="text" formControlName="prep" id="p" >
+    <p font-size:8px>puede ingresar mas una sentencia</p>
+    @if(recetasdecocina.controls['prep'].getError('required') && recetasdecocina.controls['prep'].touched){
+        <div class="error">debe tener como minimo dos letras</div>
+        }
+    @if(recetasdecocina.controls['prep'].getError('required') && recetasdecocina.controls['prep'].touched){
+    <div class="error">campo requerido</div>
+    }
+    <button (onclick)="agrgarmododepreparacion()">agregar un paso a la preparacion</button>
+    <label for="">ingrese link de la imagen</label>
+    <input type="text" formControlName="img"/>
+    @if(recetasdecocina.controls['img'].getError('required') && recetasdecocina.controls['img'].touched){
+    <div class="error">campo requerido</div>
+    }
+    @if(recetasdecocina.controls['img'].getError('required') && recetasdecocina.controls['img'].touched){
+        <div class="error">debe tener como minimo dos letras</div>
+        }
+    <button>agregar nueva receta</button>
+</form>

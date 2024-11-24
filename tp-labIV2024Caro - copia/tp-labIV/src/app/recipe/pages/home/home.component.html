@@ -1,0 +1,138 @@
+
+
+<!-- Mensaje de bienvenida -->
+<div class="container mt-4">
+  <h1 class="text-center">¡Bienvenido a nuestra página de recetas!</h1>
+  <p class="text-center">
+    Descubre deliciosas recetas para cada ocasión.
+  </p>
+</div>
+
+<!-- Carrusel de categorías -->
+<div id="categoriesCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.pequerecetas.com/wp-content/uploads/2010/01/recetas-de-sopas-caseras-faciles.jpg" class="d-block w-100 carousel-image" alt="Sopas" (click)="filterByCategory('sopas')">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Sopas</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.recetasnestle.com.ec/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/366347599c3e68e68895a5b52b550b42.webp?itok=oazoHEV1" class="d-block w-100 carousel-image" alt="Carnes" (click)="filterByCategory('carnes')">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Carnes</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://content.elmueble.com/medio/2022/04/25/postre-de-galletas-y-crema-de-limon-00437571_7570ad57_1500x2000.jpg" class="d-block w-100 carousel-image" alt="Postres" (click)="filterByCategory('postres')">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Postres</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://s2.abcstatics.com/media/bienestar/2021/04/21/DSCF1029-kn7B--1248x698@abc.JPG" class="d-block w-100 carousel-image" alt="Ensaladas" (click)="filterByCategory('ensaladas')">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Ensaladas</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/0749D9BC-260D-40F4-A07F-54814C4A82B4/Derivates/A73A7793-F3EE-4B90-ABA4-1CC1A0C3E18F.jpg" class="d-block w-100 carousel-image" alt="Sushi" (click)="filterByCategory('sushi')">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Sushi</h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#categoriesCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#categoriesCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
+
+
+<!-- Buscador -->
+<div class="container mt-4">
+  <div class="mb-4">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Buscar recetas..."
+      [(ngModel)]="searchQuery"
+      (input)="onSearch()"
+    />
+  </div>
+</div>
+
+<!-- Cards de recetas -->
+<div class="container">
+  <div class="row">
+    <div
+      class="col-md-4 mb-4"
+      *ngFor="let recipe of filteredRecipes"
+      (click)="showRecipe(recipe)"
+    >
+      <div class="card h-100" style="cursor: pointer;">
+        <img [src]="recipe.img" class="card-img-top" [alt]="recipe.name" />
+        <div class="card-body">
+          <h5 class="card-title text-center">{{ recipe.name }}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal de receta -->
+<div
+  class="modal fade"
+  id="recipeModal"
+  tabindex="-1"
+  aria-labelledby="recipeModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content custom-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="recipeModalLabel">
+          {{ selectedRecipe?.name }}
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <!-- Columna de ingredientes -->
+          <div class="col-md-6">
+            <h6>Ingredientes:</h6>
+            <ul>
+              <li *ngFor="let ingredient of selectedRecipe?.ingredients">
+                {{ ingredient }}
+              </li>
+            </ul>
+          </div>
+          <!-- Columna de preparación -->
+          <div class="col-md-6">
+            <h6>Preparación:</h6>
+            <ol>
+              <li *ngFor="let step of selectedRecipe?.prep">{{ step }}</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

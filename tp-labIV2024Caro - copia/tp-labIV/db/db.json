@@ -1,0 +1,132 @@
+{
+  "recipes" : [
+    {
+      "id": 1,
+      "category": "dessert",
+      "name": "Muffins de arandanos",
+      "time": "45 min",
+      "ingredients": [
+                      "Manteca 220 Gramos",
+                      "azúcar 450 Gramos",
+                      "Leche 240 Centimetro Cubicos ",
+                      "Huevo 4 Unidades",
+                      "Esencia de vainilla 1 Chorrito",
+                      "Harina 0000 250 Gramos",
+                      "Harina leudante 300 Gramos",
+                      "Frutos rojos  1 Taza",
+                      "azúcar 100 Gramos",
+                      "Harina 100 Gramos",
+                      "Manteca 100 Gramos"
+
+                      ],
+      "prep": [
+              "Trabajar en batidora con lira la manteca a temperatura ambiente hasta ablandar.",
+              "Agregar azúcar y trabajar a alta velocidad hasta cremar.",
+              "Añadir 1 chorro de leche, 1 huevo y seguir batiendo hasta integrar. Repetir la operación  con la leche y huevos restantes.",
+              "Perfumar con esencia de vainilla.",
+              "Bajar la velocidad, agregar harinas y seguir batiendo hasta incorporar.",
+              "Batir 30 segundos a máxima velocidad y retirar.",
+              "Completar la muffinera enmantecada y enharinada hasta 75% de la capacidad de cada muffin.",
+              "Añadir frutos rojos por encima presionándolos un poco sobre la masa y llevar a frió.",
+              "Tras 25 minutos cubrir con abundante crumble cada muffin y llevar a horno a 180ª C por 30 minutos."
+      ],
+      "img": "https://assets.elgourmet.com/wp-content/uploads/2023/08/UO_EPISODICAS_MUFFINS_DE_FRUTOS_ROJOS-5-1024x683.jpg.webp"
+
+
+    },
+    {
+      "id": 2,
+      "category": "sushi",
+      "name": "Uramaki",
+      "time": "60 min",
+      "ingredients":[
+        "Arroz de sushi aderezado (shari) Cantidad Necesaria",
+                            "Alga nori 2 Unidades",
+                            "semillas de sésamo tostadas Cantidad Necesaria",
+                            "Wasabi Cantidad Necesaria",
+                            "Palta 1 Unidad",
+                            "Pepino 1 Unidad",
+                            "Centolla cocida 250 g",
+                            "Arroz de sushi aderezado Cantidad Necesaria",
+                            "Alga nori 2 Unidades",
+                            "semillas de sésamo tostadas Cantidad Necesaria",
+                            "Wasabi Cantidad Necesaria",
+                            "Queso crema 200 g",
+                            "Cebolla de verdeo 1 Unidad",
+                            "Salmón 300 g",
+                            "Gari Cantidad Necesaria",
+                            "Wasabi Cantidad Necesaria",
+                            "Salsa de soja Cantidad Necesaria"
+      ],
+      "prep":[
+        "New York.",
+
+          "Colocar un alga nori sobre la esterilla y cubrir toda el alga con 6 m.m de arroz.",
+          "Espolvorear a gusto con el sésamo y dar vuelta el nori (quedará el arroz sobre la esterilla).",
+          "Colocar en el centro del nori, primero la palta en gajo de 2×1 aproximadamente, una cinta de",
+          "pepino de 1cm x5 m.m, patas de centolla , cerrar formando un rollo apretado, y cortar en 8 piezas.",
+          "Acompañar de con salsa de soja, gari, wasabi, y servir",
+          "California roll",
+
+          "Colocar un alga nori sobre la esterilla y cubrir toda el alga con 6 m.m de shari.",
+          "Espolvorear a gusto con el sésamo y dar vuelta el nori (quedará el arroz sobre la esterilla).",
+          "Colocar en el centro del nori queso crema",
+          "Colocar el salmón fresco de 1,5×1,5, cerrar formando un rollo apretado, y cortar en 8 piezas.",
+          "Acompañar de con salsa de soja, gari, wasabi, y servir"
+      ],
+      "img": "https://assets.elgourmet.com/wp-content/uploads/2023/05/RJ_EPISODICAS_URAMAKI_PHILADELPHIA_ROLL_NEW_YORK_ROLL-8-1024x683.jpg.webp"
+    },
+    {
+      "id": 3,
+      "category": "carnes",
+      "name": "Solomillo a la mostaza con vegetales salteados",
+      "time": "90 min",
+      "ingredients":[
+        "solomillo grande 1 unidad",
+        "vino blanco 1/2 taza",
+        "cebolla 1 unidad",
+        "diente de ajo 2 unidades",
+        "curry 1 cda",
+        "mostaza 2 cdas",
+        "miel 1 cda",
+        "crema de leche 500 g",
+        "sal y pimienta a gusto",
+        "Para el salteado:",
+
+        "espárragos 1/2 atado",
+        "morrón rojo una unidad",
+        "berenjena una unidad",
+        "papines blanqueados 200 g",
+        "pimentón 1/2 cda",
+        "oregano 1/2 cda",
+        "sal y pimienta a gusto"
+      ],
+      "prep":[
+        "Para el solomillo, en una sartén amplia dorar los bifes con un poco de aceite de ambos de ambos lados. Retirar y reservar.",
+        "Desglasar con vino blanco y retirar el jugo de cocción.",
+        "Rehogar en la misma sartén la cebolla cortada en brunoise junto al ajo picado.",
+        "Una vez cocida la cebolla, agregar los bifes, el jugo de cocción, la crema, la mostaza, la miel y el curry.",
+        "Dejar cocinar y reducir la crema.",
+        "Para el salteado de vegetales, cortar las verduras y el morrón en cuadrados.",
+        "Retirar el cabo del espárrago utilizando la parte más finita.",
+        "Cortar la berenjena en cubos y los papines previamente blanqueados a la mitad.",
+        "En un wok, colocar aceite y comenzar a cocinar las verduras. Primero el morrón junto a la berenjena y las puntas de espárragos. Por último, los papines.",
+        "Condimentar con orégano, pimentón, sal y pimienta.",
+        "Emplatar."
+      ],
+      "img":"https://www.cucinare.tv/wp-content/uploads/2024/11/Solomillo-a-la-mostaza-Gabo.jpg"
+    }
+  ],
+
+
+
+  "users":[
+    {
+      "id": 1,
+      "name": "José",
+      "email": "jose@gmail.com",
+      "password": "1234",
+      "savedRecipes": [1, 2, 3]
+    }
+  ]
+}

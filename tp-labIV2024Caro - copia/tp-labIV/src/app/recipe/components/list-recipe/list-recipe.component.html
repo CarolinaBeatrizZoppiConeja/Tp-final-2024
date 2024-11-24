@@ -1,0 +1,32 @@
+<p>list-recipe works!</p>
+<section>
+<h2>añadir receta</h2>
+<app-add-recipe></app-add-recipe>
+<hr />
+<h2>lista de recetas para agregar ahora</h2>
+<ul>    @for (item of Recipe; track $index) {
+        <li>
+           id:{{item.id}}<br /> categoria:{{item.category}}<br /> nombre:{{item.name}}<br />tiempo:{{item.time}}<br />
+            <p>lista de ingredientes</p>
+            <ul>
+                @for (item2 of item.ingredients; track $index) {
+                   <li>{{item2.ingredients}} </li>
+                }
+                <p>modo de preparacion</p>
+            </ul>
+            <ul>
+                @for (item3 of item.prep; track $index) {
+                    <li>{{item3.prep}}-</li>
+                }
+            </ul>
+            {{item.img}}
+        </li>
+    
+    }
+
+
+    <li>
+
+    </li>
+</ul>
+</section>
